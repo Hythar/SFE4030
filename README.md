@@ -26,7 +26,8 @@ The `RomanNumeralTest` class provides a placeholder for an `assertEquals` method
 ## Setup
 Compile the Java classes using a Java compiler:
 ```sh
-javac RomanNumeral.java RomanNumeralTest.java
+javac RomanNumeral.java
+RomanNumeralTest.java
 ```
 
 Run the tests:
