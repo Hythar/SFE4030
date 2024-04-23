@@ -1,10 +1,11 @@
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
+// Class RomanNumeral is used for converting Roman numeral strings to their integer value.
 public class RomanNumeral {
+    // A map to hold the Roman characters and their corresponding integer values.
     private static final Map<Character, Integer> map;
-
+// Static initializer to populate the map with Roman numerals and their integer equivalents.
     static {
         Map<Character, Integer> tempMap = new HashMap<>();
         tempMap.put('I', 1);
@@ -16,7 +17,7 @@ public class RomanNumeral {
         tempMap.put('M', 1000);
         map = Collections.unmodifiableMap(tempMap);
     }
-
+// Method to convert a Roman numeral string to an integer.
     public int romanToInt(String s) {
         int convertedNumber = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -32,7 +33,8 @@ public class RomanNumeral {
     }
     public static void main(String[] args) {
         RomanNumeral romanConverter = new RomanNumeral();
+        // Convert the Roman numeral "V" to its integer value and print the result.
         int result = romanConverter.romanToInt("V");
-        System.out.println(result);
+        System.out.println(result);// Output will be 5
     }
 }
